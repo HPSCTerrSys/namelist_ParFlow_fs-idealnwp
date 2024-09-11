@@ -71,36 +71,36 @@ pfset Solver.Nonlinear.VariableDz            True
 pfset dzScale.GeomNames                      domain
 pfset dzScale.Type                           nzList
 pfset dzScale.nzListNumber                   [pfget ComputationalGrid.NZ]
-pfset Cell.0.dzScale.Value                   1.35
-pfset Cell.1.dzScale.Value                   1.35
-pfset Cell.2.dzScale.Value                  1.35
-pfset Cell.3.dzScale.Value                   1.35
-pfset Cell.4.dzScale.Value                   1.35
-pfset Cell.5.dzScale.Value                   1.35
-pfset Cell.6.dzScale.Value                   1.35
-pfset Cell.7.dzScale.Value                   1.35
-pfset Cell.8.dzScale.Value                   1.35
-pfset Cell.9.dzScale.Value                   1.35
-pfset Cell.10.dzScale.Value                   1.35
-pfset Cell.11.dzScale.Value                   1.35
-pfset Cell.12.dzScale.Value                   1.35
-pfset Cell.13.dzScale.Value                   1.35
-pfset Cell.14.dzScale.Value                   1.35
-pfset Cell.15.dzScale.Value                   1.35
-pfset Cell.16.dzScale.Value                   1.35
-pfset Cell.17.dzScale.Value                   1.35
-pfset Cell.18.dzScale.Value                   1.35
-pfset Cell.19.dzScale.Value                   1.35
-pfset Cell.20.dzScale.Value                   1.00
-pfset Cell.21.dzScale.Value                   0.70
-pfset Cell.22.dzScale.Value                   0.50
-pfset Cell.23.dzScale.Value                   0.30
-pfset Cell.24.dzScale.Value                   0.20
-pfset Cell.25.dzScale.Value                   0.13
-pfset Cell.26.dzScale.Value                   0.07
-pfset Cell.27.dzScale.Value                   0.05
-pfset Cell.28.dzScale.Value                   0.03
-pfset Cell.29.dzScale.Value                   0.02
+pfset Cell.0.dzScale.Value                   10
+pfset Cell.1.dzScale.Value                   7.5
+pfset Cell.2.dzScale.Value                   7.5
+pfset Cell.3.dzScale.Value                   5
+pfset Cell.4.dzScale.Value                   5
+pfset Cell.5.dzScale.Value                   5
+pfset Cell.6.dzScale.Value                   2
+pfset Cell.7.dzScale.Value                   2
+pfset Cell.8.dzScale.Value                   2
+pfset Cell.9.dzScale.Value                   2
+pfset Cell.10.dzScale.Value                  1.14
+pfset Cell.11.dzScale.Value                  1.04
+pfset Cell.12.dzScale.Value                  0.94
+pfset Cell.13.dzScale.Value                  0.84
+pfset Cell.14.dzScale.Value                  0.74
+pfset Cell.15.dzScale.Value                  0.64
+pfset Cell.16.dzScale.Value                  0.54
+pfset Cell.17.dzScale.Value                  0.44
+pfset Cell.18.dzScale.Value                  0.4
+pfset Cell.19.dzScale.Value                  0.36
+pfset Cell.20.dzScale.Value                  0.32
+pfset Cell.21.dzScale.Value                  0.28
+pfset Cell.22.dzScale.Value                  0.24
+pfset Cell.23.dzScale.Value                  0.2
+pfset Cell.24.dzScale.Value                  0.16
+pfset Cell.25.dzScale.Value                  0.12
+pfset Cell.26.dzScale.Value                  0.08
+pfset Cell.27.dzScale.Value                  0.06
+pfset Cell.28.dzScale.Value                  0.04
+pfset Cell.29.dzScale.Value                  0.02
 
 # TIME INFORMATION &
 # TIME SETUP
@@ -326,4 +326,4 @@ pfset Solver.WriteCLMBinary			        False
 #-----------------------------------------------------------------------------
 # Run and Unload the ParFlow output files
 #-----------------------------------------------------------------------------
-pfwritedb fs-idealnwp
+pfwritedb __pfl_casename__
