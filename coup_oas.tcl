@@ -311,10 +311,25 @@ pfset Solver.PrintSubsurf				 False
 pfset Solver.Drop					 1E-20
 pfset Solver.AbsTol					 1E-12
 
-pfset Solver.PrintSaturation                            True
+# Control output
+#-------------------------------------------------------------------------------
+pfset Solver.PrintSaturation                            False
 pfset Solver.PrintSubsurf                               False
-pfset Solver.PrintPressure                              True
+pfset Solver.PrintPressure                              False
 pfset Solver.PrintSubsurf                               False
+
+pfset NetCDF.NumStepsPerFile                    1
+pfset NetCDF.WritePressure                      True
+pfset NetCDF.WriteSaturation                    True
+pfset NetCDF.WriteMannings                      False
+pfset NetCDF.WriteSlopes                        False
+# Set NetCDF.WriteSubsurface and NetCDF.WriteMask to False, as those are coverd
+# by Solver.PrintSubsurfData and vanGenuchten parameter are coverd by
+# Solver.PrintSubsurfData as well, but not by NetCDf output.
+pfset NetCDF.WriteSubsurface                    False
+pfset NetCDF.WriteMask                          False
+pfset NetCDF.WriteDZMultiplier                  False
+pfset NetCDF.WriteEvapTrans                     False
 
 pfset Solver.WriteSiloSubsurfData		        False
 pfset Solver.WriteSiloPressure				False
